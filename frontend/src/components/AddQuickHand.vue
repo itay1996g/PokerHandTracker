@@ -40,7 +40,7 @@ const currentSelectedAction = ref<string | null>(null)
 const isBetting = ref(false)
 const betInputRef = ref<HTMLInputElement | null>(null)
 const selectedSuit = ref()
-const cities = ref([
+const suits = ref([
   { name: '♣', code: 'club' },
   { name: '♥', code: 'heart' },
   { name: '♠', code: 'spade' },

@@ -3,6 +3,7 @@ import Home from '@/views/Home.vue';
 import LoginView from '@/views/Login.vue';
 import RegisterView from '@/views/Register.vue';
 import DashboardView from '@/views/Dashboard.vue';
+import StatisticsView from '@/views/Statistics.vue';
 import HandHistoryView from '@/views/HandHistory.vue';
 import { useStore } from '../store/index';
 
@@ -29,6 +30,12 @@ const routes = [
     path: '/dashboard',
     name: 'Dashboard',
     component: DashboardView,
+    meta: { requiresAuth: true },
+  },
+  {
+    path: '/statistics',
+    name: 'Statistics',
+    component: StatisticsView,
     meta: { requiresAuth: true },
   },
   {
